@@ -1,0 +1,115 @@
+.TodoList-Card{
+  border-radius: 3px;
+  background: var(--app-background-desaturated);
+  box-shadow: -5px 5px 30px -5px var(--shadow-color);
+  transition: ease 0.5s;
+}
+
+.TodoList-Card-Content{
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.TodoList-Input{
+  margin-bottom: 15px;
+}
+
+.TodoList-Item{
+  border-bottom: 1px solid var(--grayish-color);
+  transition: ease 0.5s;
+}
+
+.TodoList-Footer{
+  font-size: .8rem;
+}
+
+.CheckBox{
+  display: flex;
+  margin-right: 15px;
+}
+
+.CheckBox-Label{
+  width: 18px;
+  height: 18px;
+  border-radius: 10px;
+  border: 1px solid var(--grayish-color);
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  transition: ease 0.5s;
+}
+
+.CheckBox-Label.Checked{
+  background: var(--gradiant);
+}
+
+.CheckBox-Input{
+  display: none;
+}
+
+.tashed{
+  color: var(--text-muted);
+  text-decoration: line-through;
+}
+
+.BtnLink,
+.BtnIcon{
+  border: 0;
+  background: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+@media( min-width: 720px){
+  .BtnIcon{
+    display: none;
+  }
+  .TodoList-Item:hover .BtnIcon{
+    display: block;
+  }
+}
+
+.TaskTitle{
+  flex-grow: 1;
+}
+
+.TodoList-Footer-Content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.TodoList-Footer-Content,
+.TodoList-Filter{
+  display: flex;
+}
+
+.TodoList-Filter{
+  margin: 0;
+  padding: 0;
+}
+
+.TodoList-Filter li{
+  list-style: none;
+  margin: 0 5px;
+  padding: 0 5px;
+}
+
+.Link{
+  text-decoration: none;
+  color: var(--app-color-text);
+}
+
+.Link:hover{
+  color: hsl(192, 100%, 67%)
+}
+
+.TodoListInput{
+  border: 0;
+  background: transparent;
+  outline: none;
+  font-size: 18px;
+  font-family: 'Josefin Sans', sans-serif;
+  flex-grow: 1;
+}
